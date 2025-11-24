@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import LogInPage from './pages/LogInPage'
-import HomePage from './pages/HomePage'
+import AppRoutes from './routes/AppRoute'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -11,9 +11,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen">
-      {isLoggedIn ? <HomePage /> : <LogInPage onLogin={handleLogin} />}
-    </div>
+  <BrowserRouter>
+  <AppRoutes />
+  </BrowserRouter>
   )
 }
 

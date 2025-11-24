@@ -10,7 +10,7 @@ function LogInPage({ onLogin }) {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#7c3aed] via-[#6d28d9] to-[#67e8f9] text-slate-900 flex items-center justify-center px-4 py-10">
-    
+    <h1>Log in page </h1>
     </div>
   )
 }
